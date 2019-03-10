@@ -2,16 +2,17 @@
     margin:0;
     padding:0;
     font-family: "Lato";
+    box-sizing: border-box;
 }
 
 @font-face{
     font-family: "Lato";
-    src: url("/fonts/lato/Lato-Regular.ttf");
+    src: url("assets/fonts/lato/Lato-Regular.ttf");
 }
 
 @font-face{
     font-family: "Maven Pro Regular";
-    src: url("/fonts/maven-pro/MavenPro-Regular.ttf");
+    src: url("assets/fonts/maven-pro/MavenPro-Regular.ttf");
 }
 
 .wrapper{
@@ -28,9 +29,11 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    
 }
 
-.header__hex{
+.header__hex_1{
     position: absolute;
     left: 50%;
     margin-left: -50px;
@@ -39,11 +42,22 @@ header{
     height: 120px;
     transform: rotate(120deg);
     overflow: hidden;
-    z-index: -1;
+    z-index: 2;
 }
 
-.header__hex__color{
+.header__hex_1-color{
     background: #323232;
+}
+
+.block{
+    left: 50%;
+    margin-left: -70px;
+    top: 65px;
+    position: absolute;
+    width: 140px;
+    height: 20px;
+    background-color: white;
+    z-index: 1;
 }
 
 .nav__list{
@@ -80,17 +94,93 @@ header{
 }
 
 .center-triangle{
-    width: 64px;
+    width: 57px;
     height: 55px;
     margin: 0 25px;
-    background-image: url("images/Logo.png");
+    background-image: url("assets/images/Logo.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    z-index: 2;
 }
 
 .hexal-field{
-    height: 721px;
+    height: 641px;    
 }
+
+.hexal__wrapper{
+    width: 960px;
+    margin: 10px auto;
+    border-top:1px solid #e4e9eb;
+    border-bottom:1px solid #e4e9eb;
+    
+}
+
+.hexal-row{
+    display: flex;
+    justify-content: center;
+}
+
+.hexal-row_1{
+    margin-top: 80px;
+}
+
+.hexal-row_2{
+    margin: -60px 0;
+}
+
+
+.hex-1{
+    background-image: url("assets/images/Layer_33.png");
+}
+
+.hex-2{
+    background-image: url("assets/images/Layer_31.png");
+}
+
+.hex-3{
+    background-image: url("assets/images/Layer_34.png");
+}
+
+.hex-4{
+    background-image: url("assets/images/Layer_35.png");
+}
+
+.hex-5{
+    background-image: url("assets/images/Layer_36.png");
+}
+
+.hex-6{
+    background-image: url("assets/images/Layer_44.png");
+}
+
+.hex-7{
+    background-image: url("assets/images/Layer_37.png");
+}
+
+.hex-8{
+    background-image: url("assets/images/Layer_38.png");
+}
+
+.hex-9{
+    background-image: url("assets/images/Layer_39.png");
+}
+
+.hex-10{
+    background-image: url("assets/images/Layer_40.png");
+}
+
+.hex-11{
+    background-image: url("assets/images/Layer_41.png");
+}
+
+.hex-12{
+    background-image: url("assets/images/Layer_43.png");
+}
+
+.hex-13{
+    background-image: url("assets/images/Layer_42.png");
+}
+
 
 .speech{
     height: 341px;
@@ -107,6 +197,7 @@ footer{
     height: 208px;
     transform: rotate(120deg);
     overflow: hidden;
+    margin: 10px;
 }
 
 .h-1{
@@ -120,7 +211,10 @@ footer{
     width: 100%;
     height: 100%;
     transform: rotate(-60deg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
 
 
 
@@ -130,14 +224,13 @@ footer{
 .cent{
     height: 20px;
     width: 100%;
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .line{
-    width: 2px;
+    width: 1px;
     height: 100%;
     background: green;
 }
