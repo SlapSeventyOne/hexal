@@ -277,6 +277,7 @@ header{
 }
 
 .vertical-lines{
+    z-index: -3;
     position: absolute;
     width: 822px;
     height: 104px;
