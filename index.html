@@ -74,18 +74,22 @@
     
     </main>
     <footer>
-    <div class="wrapper">    
-        <form action="" method="post">
+    <div class="footer__wrapper">  
+
+        <form class="footer__form"  method="post">
         <fieldset>
-            <legend>Get in Touch</legend>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <legend><h2>Get in Touch</h2></legend>
+            <input type="text" id="name" placeholder="Name (Required)" required>
+            <input type="email" id="email" placeholder="Email (Required)"  required>
+            <input type="text" id="subject" placeholder="Subject" >
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
         </fieldset>
             <button type="submit">send</button>
         
         </form>
+    </div>
+    <div class="copyright">
+        <p class="copyright__p">© Copyright 2013 by PSDchat</p>
     </div>
     </footer>
 </body>

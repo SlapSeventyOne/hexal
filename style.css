@@ -20,13 +20,6 @@ h1{
     visibility: hidden;
 }
 
-.wrapper{
-    width: 820px;
-    margin: 0 auto;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
-}
-
 header{
     height: 63px;
     background: #323232;
@@ -268,8 +261,54 @@ header{
 }
 
 footer{
+    position: relative;
     height: 607px;
     background: #323232;
+    color:#e0e0e0;
+}
+
+.footer__wrapper{
+    width: 780px;
+    margin: 0 auto;
+}
+
+fieldset{
+    border: none;
+}
+
+.footer__form{
+    width: 580px;
+}
+
+.footer__form input, .footer__form textarea{
+    display: block;
+    width: 100%;
+    background-color:#454545;
+    border: none;
+    min-height: 38px;
+    margin: 10px auto;
+}
+
+
+
+.copyright{
+    position: absolute;
+    width: 1020px;
+    height: 43px;
+    left: 50%;
+    margin-left: -510px;
+    bottom: 0%;
+    background-color: #222222;
+
+}
+
+.copyright__p{
+    padding-left: 39px;
+    display: inline-block;
+    color: #454545;
+    font-size: 12px;
+    line-height: 43px;
+    letter-spacing: -0.2px;
 }
 
 .hex{
@@ -299,20 +338,3 @@ footer{
     box-shadow: 0 0 2px 2px #219d84;
 }
 
-
-
-
-
-.cent{
-    height: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.line{
-    width: 1px;
-    height: 100%;
-    background: green;
-}
