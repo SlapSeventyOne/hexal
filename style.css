@@ -83,7 +83,7 @@ header{
     width: 64px;
     height: 55px;
     margin: 0 25px;
-    background-image: url("/images/Logo.png");
+    background-image: url("images/Logo.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
