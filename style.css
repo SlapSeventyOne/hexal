@@ -317,6 +317,7 @@ fieldset{
     transform: rotate(120deg);
     overflow: hidden;
     margin: 10px;
+    transition: 0.5s;
 }
 
 .h-1{
@@ -334,7 +335,8 @@ fieldset{
     background-size: contain;
 }
 
-.h-2:hover{
-    box-shadow: 0 0 2px 2px #219d84;
+.hex:hover{
+    transform: scale(1.18) rotate(120deg);
+    transition: 0.5s;
 }
 
